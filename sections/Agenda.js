@@ -26,7 +26,7 @@ export default function Agenda() {
     const [events, setEvents] = useState([])
 
     useEffect(() => {
-      fetch('http://localhost:1337/api/events')
+      fetch('https://celo-landing-backend.herokuapp.com/api/events')
         .then(res => res.json())
         .then(data => setEvents(data.data))
         .then(() => console.log(events))

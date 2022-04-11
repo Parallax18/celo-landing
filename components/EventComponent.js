@@ -1,11 +1,13 @@
 import React from 'react'
 import LinkButton from './LinkButton'
 import SectionHeader from './section-header'
-
+import moment from 'moment'
 export default function EventComponent({date, title, text, startTime, endTime, eventLocation}) {
+
+    console.log({startTime, endTime, date})
   return (
     <div className='flex flex-col md:flex-row justify-between py-7 mb:py-12 md:border-b border-black md:mb-10'>
-        <SectionHeader title={date} isStroked={true}/>
+        <SectionHeader title={moment(date).format("MMM Do")} isStroked={true}/>
         <div className='w-full md:w-1/2'>
             <div>
                 <h4 className='text-[#1B1B18] font-bold mb-3'>{title}</h4>
