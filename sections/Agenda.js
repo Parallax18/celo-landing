@@ -42,7 +42,7 @@ export default function Agenda() {
             <h3 className='font-semibold text-lg text-[#97928E]'>Upcoming opportunities</h3>
         </div>
        {events && (events.map(({attributes}, index) => (
-            <EventComponent key={index} date={attributes.date} title={attributes.title} text={attributes.about} startTime={attributes.startTime} endTime={attributes.endTime} eventLocation={attributes.location}/>
+            <EventComponent key={index} date={ attributes.date} title={attributes.title} text={attributes.about} startTime={attributes.startTime} endTime={attributes.endTime} eventLocation={attributes.location}/>
         )))}
        
     </section>
