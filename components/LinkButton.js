@@ -6,7 +6,7 @@ export default function LinkButton({ type, linkTo, variant }) {
   return (
     <Link href={linkTo} passHref>
       {type === "journey" ? (
-        <a className="flex p-3 bg-white rounded-lg w-full justify-center">
+        <a className="flex p-3 bg-white rounded-xl w-full justify-center">
           Start now
         </a>
       ) : type === "job" ? (

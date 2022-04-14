@@ -26,7 +26,7 @@ export default function FloatingNav() {
       <div className="bg-[#EFEFEE] w-full md:w-1/3 flex p-2 rounded-lg justify-between">
         {navData.map((item, index) => (
           <ScrollLink
-            activeClass="bg-black text-[#ffff]"
+            activeClass="bg-black text-white"
             to={item.path}
             spy={true}
             smooth={true}

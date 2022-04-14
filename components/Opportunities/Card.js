@@ -3,9 +3,9 @@ import SectionHeader from "../SectionHeader";
 
 export default function OpportunityComponent({ numberOf, text }) {
   return (
-    <div className="mb-3 w-full">
+    <div className="mt-8 w-full">
       <SectionHeader title={numberOf} />
-      <p>{text}</p>
+      <p className="text-2xl mt-2">{text}</p>
     </div>
   );
 }

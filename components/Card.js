@@ -11,24 +11,22 @@ export default function CardComponent({
 }) {
   return (
     <div
-      className="p-4 rounded-xl md:w-64 md:mr-5 flex flex-col justify-between"
-      style={styles[variant]}
+      className="p-6 rounded-[28px] md:w-80 md:mr-5 flex flex-col justify-between"
+      style={styles[variant].card}
     >
       <div>
-        <p style={styles[variant].title} className="font-semibold">
+        <p style={styles[variant].title} className="font-semibold text-2xl">
           {title}
         </p>
-        <p style={styles[variant].subtitle} className="font-semibold">
+        <p style={styles[variant].subtitle} className="font-semibold text-2xl">
           {subtitle}
         </p>
       </div>
-      <div>
+      <div className="pt-14">
         {prize && (
           <div>
-            <h2 className="text-6xl text-[#FDFDFC]">${prize}</h2>
-            <p className="text-base text-[#FDFDFC] my-3 font-semibold">
-              Reward
-            </p>
+            <h2 className="text-8xl text-[#FDFDFC]">${prize}</h2>
+            <p className="text-2xl text-[#FDFDFC] my-3 font-semibold">Reward</p>
           </div>
         )}
         <LinkButton linkTo={to} type={type} />
@@ -39,8 +37,9 @@ export default function CardComponent({
 
 const styles = {
   "journey-purple": {
-    background: "#924EFF",
-    height: "20rem",
+    card: {
+      background: "#924EFF",
+    },
     title: {
       color: "#FDFDFC",
     },
@@ -49,8 +48,9 @@ const styles = {
     },
   },
   "journey-green": {
-    background: "#0CDA6E",
-    height: "20rem",
+    card: {
+      background: "#0CDA6E",
+    },
     title: {
       color: "#FDFDFC",
     },
@@ -59,8 +59,10 @@ const styles = {
     },
   },
   job: {
-    background: "#EFEFEE",
-    height: "14rem",
+    card: {
+      background: "#EFEFEE",
+      height: "21.4 rem",
+    },
     title: {
       color: "#1B1B18",
     },

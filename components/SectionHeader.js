@@ -3,7 +3,7 @@ import React from "react";
 export default function SectionHeader({ title, isStroked, isWhite }) {
   return (
     <h4
-      className={`text-3xl md:text-7xl font-bold ${isWhite && "text-white"}`}
+      className={`text-3xl md:text-8xl font-bold ${isWhite && "text-white"}`}
       style={isStroked && { ...styles.stroked }}
     >
       {title}
