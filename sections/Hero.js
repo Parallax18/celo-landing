@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <section id="opportunities" className="p-3 md:p-5 py-12">
       <div className="mb-16 md:mb-52">
-        <div className="w-full md:w-1/2 relative">
+        <div className="w-full lg:w-3/4 md:w-1/2 relative">
           <div className="absolute bottom-6 md:bottom-12 -z-10">
             <Lottie options={defaultOptions} />
           </div>

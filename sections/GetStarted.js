@@ -44,7 +44,7 @@ export default function GetStarted() {
   return (
     <section
       id="getStarted"
-      className="md:h-screen p-3 md:py-5 py-12 md:p-5"
+      className="lg:h-max  p-3 md:py-5 py-12 md:p-5"
       style={{ background: "#1B1B18" }}
     >
       <div className="w-full md:w-2/3 flex flex-col justify-between relative h-1/2 md:mb-0 mb-64">

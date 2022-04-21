@@ -10,7 +10,6 @@ export default function EventComponent({
   endTime,
   eventLocation,
 }) {
-  console.log({ startTime, endTime, date });
   return (
     <div className="flex flex-col md:flex-row justify-between py-7 mb:py-12 md:border-b border-black md:mb-10">
       <SectionHeader title={moment(date).format("MMM Do")} isStroked={true} />
@@ -40,3 +39,13 @@ export default function EventComponent({
     </div>
   );
 }
+
+
+// const EventLoading = () => {
+//   return(
+//     <div className="flex flex-col md:flex-row justify-between py-7 mb:py-12 md:border-b border-black md:mb-10">
+//       <div className="bg-gray-300 h-48 w-24" />
+      
+//     </div>
+//   )
+// }
